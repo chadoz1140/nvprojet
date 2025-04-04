@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Mon portfolio - Accueil</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <style  id ="styleinterne">
+            h1{
+                font-size: 40px;
+                font-weight: normal;
+                text-align:center;
+                margin-left: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Nasser Diogo Caetano</h1>
+        </header>
+        <nav>
+            <div class="menu">
+                <ul>
+                    <li class="menu-accueil">
+                        <a href="index.html">Accueil</a>
+                    </li>
+                    <li class="menu-exp">
+                        <a href="mes-site-pref.html">Mes sites web préféré</a>
+                    </li>
+                    <li class="menu-loisir">
+                        <a href="loisir.html">Loisirs</a>
+                    </li>
+                    <li class="menu-contact">
+                        <a href="contact.html">Contactez-moi !</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="mes-site-pref.html#moniframe">Vers insert</a>
+                <a href="monScript.js" download>Vers JavaScript</a>
+                <a href="contact.html">Vers formulaire</a>
+                <a href="loisir.html#mavideo">Vers video</a>
+                <a href="index.html#styleinterne">Vers style interne css</a>
+                <a href="index.html#stylebalise">Vers formatage CSS au sein d'une balise HTML.</a>
+                <a href="#">Vers positionnement « absolu » d'un bloc au sein d'un bloc lui-même « positionné ». </a>
+                <a href="#">Vers :before</a>
+                <a href="#">Vers :after</a>
+                <a href="#">Vers :hover</a>
+                <a href="#">Vers :focus</a>
+                <a href="#">Vers span</a>
+                <a href="#">Vers strong</a>
+                <a href="#">Vers em</a>
+                <a href="#">Vers inline-block</a>
+                <a href="#">Vers overflow</a>
+                <a href="#">Vers section</a>
+                <a href="#">Vers nav</a>
+                <a href="#">Vers article</a>
+            </div>
+            <span class ="span-open" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+        </nav>
+        <article>
+            <section class="presentation">
+                <h2 id="stylebalise" class="h2-1" style="font-size: 40px; font-weight: normal; text-align:center; margin-left: 25px;">À propos de moi</h2>
+                <div class="sec">
+                    <div class="gauche">
+                        <img class="mon-image" src="Image/personne2.webp" alt="Bonhomme qui salut">
+                    </div>
+                    <div class="droite">
+                        <p>Bonjour, Je m'appelle Nasser Diogo Caetano Hodroj, je suis agé de 24 ans et <em>étudiant à <strong>l'EPFC</strong></em></p>
+                        <p>Je suis actuellement en première année en <em>Bachelier informatique de gestion.</em></p>
+                        <p>Ceci est mon premier site web, c'est un petit <strong>portfolio personnelle</strong> qui sert pour mon projet du cours de web. </p>
+                    </div>
+                </div>
+            </section>
+            <section class="parcours">
+                <h2 class = "h2-2" style="font-size: 40px; font-weight: normal; text-align:center; margin-left: 25px;">Parcours et expériences</h2>
+                <div class="sec">
+                    <h3>Experience professionnelles</h3>
+                    <div class="exp">
+                        <div class="gauche">
+                            <h4>2019-2021</h4>
+                        </div>
+                        <div class="droite">
+                            <h4>Inventoriste</h4>
+                            <p>Inventoriste Chez la société RGIS</p>
+                        </div>
+                        <div class="gauche">
+                            <h4>2021-2022</h4>
+                        </div>
+                        <div class="droite">
+                            <h4>Collaborateur de trie</h4>
+                            <p>Collaborateur de trie chez bpost trie de colis et lettres</p>
+                        </div>
+                    </div>
+                    <h3>Parcours scolaire</h3>
+                    <div class="exp">
+                        <div class="gauche">
+                            <h4>2013-2017</h4>
+                        </div>
+                        <div class="droite">
+                            <h4>Étudiant secondaire - ARWSL</h4>
+                            <p>Étudiant en option scientifique à l'Athénée Royale De Woluwe Saint Lambert</p>
+                        </div>
+                        <div class="gauche">
+                            <h4>2017-2019</h4>
+                        </div>
+                        <div class="droite">
+                            <h4>Étudiant secondaire - IEJ</h4>
+                            <p>Étudiant en option science-économique à l'Institut Enfant Jésus</p>
+                        </div>
+                    </div>
+                </div>    
+            </section>
+            <section class="competences">
+                <div class="sec">
+                    <h2 class="h2-3" style="font-size: 40px; font-weight: normal; text-align:center; margin-left: 25px;">Mes compétences techniques</h2>
+                    <table class="competence-table">
+                        <thead>
+                            <tr>
+                                <th>Compétence</th>
+                                <th>Niveau</th>
+                                <th>Début</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>HTML/CSS</td>
+                                <td>Débutant</td>
+                                <td>2025</td>
+                            </tr>
+                            <tr>
+                                <td>Java</td>
+                                <td>Intermédiaire</td>
+                                <td>2024</td>                     
+                            </tr>
+                            <tr>
+                                <td>JavaScript</td>
+                                <td>Débutant</td>
+                                <td>2025</td>
+                            </tr>
+                            <tr>
+                                <td>SQL</td>
+                                <td>Intermédiaire</td>
+                                <td>2024</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>                
+        </article>
+        <footer>
+            <p>Copyright 2025 Nasser Diogo Caetano - Fin de Page</p>
+        </footer>
+        <script src="monScript.js"></script>
+    </body>
+</html>

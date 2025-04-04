@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Mon portfolio - Contact</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            h1{
+                font-size: 40px;
+                font-weight: normal;
+                text-align:center;
+                margin-left: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Nasser Diogo Caetano</h1>
+        </header>
+        <nav>
+            <div class="menu">
+                <ul>
+                    <li class="menu-accueil">
+                        <a href="index.html">Accueil</a>
+                    </li>
+                    <li class="menu-exp">
+                        <a href="mes-site-pref.html">Mes sites web préféré</a>
+                    </li>
+                    <li class="menu-loisir">
+                        <a href="loisir.html">Loisirs</a>
+                    </li>
+                    <li class="menu-contact">
+                        <a href="contact.html">Contactez-moi !</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="mes-site-pref.html#moniframe">Vers insert</a>
+                <a href="monScript.js" download>Vers JavaScript</a>
+                <a href="contact.html">Vers formulaire</a>
+                <a href="loisir.html#mavideo">Vers video</a>
+                <a href="index.html#styleinterne">Vers style interne css</a>
+                <a href="index.html#stylebalise">Vers formatage CSS au sein d'une balise HTML.</a>
+                <a href="#">Vers positionnement « absolu » d'un bloc au sein d'un bloc lui-même « positionné ». </a>
+                <a href="index.html">Vers :before</a>
+                <a href="#">Vers :after</a>
+                <a href="#">Vers :hover</a>
+                <a href="#">Vers :focus</a>
+                <a href="#">Vers span</a>
+                <a href="#">Vers strong</a>
+                <a href="#">Vers em</a>
+                <a href="#">Vers inline-block</a>
+                <a href="#">Vers overflow</a>
+                <a href="#">Vers section</a>
+                <a href="#">Vers nav</a>
+                <a href="#">Vers article</a>
+            </div>
+            <span class ="span-open" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+        </nav>
+        <section class="contact">
+            <h2 class="h2-9" style="font-size: 40px; font-weight: normal; text-align:center; margin-left: 25px;">Contactez-moi !</h2>
+            <form method="post" action="traitement.php">
+                <fieldset>
+                    <legend>Informations :</legend><br>
+                    <label for="prenom">Entre ton prénom</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Ton prénom ici"><br><br>
+                    <label for="nom">Entre ton nom</label>
+                    <input type="text" id="nom" name="nom" placeholder="Ton nom ici"><br><br>
+                    <label for="prez">Formulez ici</label>
+                    <textarea id="prez" name="presentation" placeholder="Écrivez ici"></textarea>
+                    <input type="submit" value="Envoyer">
+                </fieldset>
+            </form>
+            <div class="sec">
+                <p>Hesitez pas a me contacter par mail : <strong>diogo-caetano[at]hotmail.be</strong></p>
+                <p>Merci beaucoup et a bientot pour une meilleur page !</p>
+            </div>
+        </section>
+        <footer>
+            <p>Copyright 2025 Nasser Diogo Caetano - Fin de Page</p>
+        </footer>
+        <script src="monScript.js"></script>
+    </body>
+</html>

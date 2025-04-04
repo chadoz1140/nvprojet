@@ -1,0 +1,393 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    height: 100px;
+}
+
+footer{
+    height: 80px;
+    padding-top: 30px;
+    text-align: center;
+    background-color: #C5C5C5;
+    border-top: 2px solid #AAA
+}
+
+nav ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav li{
+    list-style-type:none ;
+    float: left;
+}
+
+nav{
+    background-color:#4c235c;
+    width: 100%;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 30px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.menu{
+    display:table;
+    margin: 0 auto;
+}
+
+.menu-accueil:hover, .presentation{
+    border-top: 5px solid rgba(8, 73, 117, 0.726);
+    background-color: rgba(68, 195, 204, 0.26);
+}
+
+.menu-exp:hover, .parcours{
+    border-top: 5px solid rgba(4, 100, 41, 0.548);
+    background-color: rgba(88, 219, 143, 0.281);
+}
+
+.menu-loisir:hover, .competences{
+    border-top: 5px solid rgba(71, 2, 2, 0.5);
+    background-color: rgba(204, 88, 68, 0.226);
+}
+
+.menu-contact:hover, .recommendation{
+    border-top:  5px solid rgb(67, 67, 68);
+    background-color: rgb(114, 118, 119);
+}
+
+nav li:hover a{
+    padding: 15px 30px 20px 30px;
+}
+
+section{
+    width: 100%;
+    min-height: 300px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+}
+
+.sec{
+    margin: 0px 10%;
+}
+
+.mon-image{
+    border: 5px solid rgba(24, 96, 163, 0.315);
+    border-radius: 15px;
+    max-width: 100%;
+    margin-left: -35px;
+    margin-top: -75px;
+
+}
+
+.exp-gauche img{
+    border: 5px solid rgba(116, 55, 151, 0.295);
+    border-radius: 10px;
+
+}
+
+.gauche{
+    float: left;
+    width: 30%;
+}
+
+.droite{
+    float: left;
+    width: 70%;
+}
+
+table{
+    font-family: 'Arial', sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    margin: 20px;
+    margin-left: 25%;
+}
+thead th {
+    font-weight: bold;
+}
+
+th{
+    background-color:#007bff;
+    border: 2px solid #ced4da;
+    padding: 10px;
+    text-align: left;
+}
+
+td{
+    background-color: rgba(210, 105, 30, 0.342);
+    padding: 10px;
+    border: 1px solid #e1e4e8;
+}
+tr:hover {
+    background-color: #e9ecef;
+}
+
+.sec::after, .exp::after, .reco::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.orange{
+    border-top: 5px solid rgba(133, 102, 61, 0.582);
+    background-color: rgba(175, 148, 57, 0.377);
+    margin-bottom: 0px;
+}
+
+.rose{
+    border-top: 5px solid rgba(143, 121, 158, 0.733);
+    background-color: rgba(145, 95, 160, 0.247);
+    margin-bottom: 0px;
+}
+
+.vert{
+    border-top: 5px solid rgba(115, 255, 0, 0.164);
+    background-color: rgba(128, 255, 0, 0.212);
+}
+
+
+
+.bleu{
+    border-top: 5px solid rgba(1, 34, 43, 0.219);
+    background-color: rgba(0, 255, 179, 0.205);
+}
+
+.jaune{
+    border-top: 5px solid rgba(255, 0, 0, 0.233);
+    background-color: rgba(255, 145, 0, 0.205);
+}
+
+.rouge{
+    border-top: 5px solid red;
+    background-color: chartreuse;
+}
+
+.exp-gauche{
+    width: 45%;
+    float: left;
+    margin-left: 5%;
+}
+
+.vid{
+    width: 100%;
+    margin-left: -55px;
+}
+
+.exp-droite{
+    width: 45%;
+    float: left;
+}
+
+.exp-gauche img{
+    width: 100%;
+    max-width: 400px;
+}
+
+.iframe{
+    width: 100%;
+    border: 5px solid rgba(204, 168, 50, 0.925);
+    border-radius: 15px;
+}
+
+input:focus {
+    background-color: #007bff;
+    color: white;
+    outline: none;
+    border: 2px solid #0056b3;
+    border-radius: 5px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.span-open{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 10px;
+    background-color: #66297eab;
+    border-radius: 55px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.voyage{
+    border-top: 5px solid rgba(128, 128, 128, 0.541);
+    background-color: rgba(92, 91, 91, 0.26);
+}
+
+.hardware{
+    border-top: 5px solid rgba(209, 211, 101, 0.233);
+    background-color: rgba(228, 255, 77, 0.178);
+}
+.prez{
+    overflow: scroll;
+}
+
+.hardware img{
+    border: 5px solid rgba(255, 187, 0, 0.192);
+    border-radius: 5px;
+}
+
+.dev{
+    border-top: 5px solid rgba(161, 101, 211, 0.233);
+    background-color: rgba(200, 163, 241, 0.178);
+}
+
+.form-loisir{
+    border-top: 5px solid rgba(161, 101, 211, 0.233);
+}
+
+.contact{
+    border-top: 5px solid rgba(161, 101, 211, 0.233);
+    background-color: rgba(169, 168, 236, 0.267);
+}
+
+.h2-1::before{
+    content: "🫡";
+}
+
+.h2-2::before{
+    content: "🖋️";
+}
+
+.h2-3::before{
+    content: "💻";
+}
+
+.h2-4::before{
+    content: "📰";
+}
+
+.h2-5::before{
+    content: "💭";
+    background-color: #ae00ff2f;
+    border-radius: 35px;
+}
+
+.h2-6::before{
+    content: "📩";
+}
+
+.h2-7::before{
+    content: "✈️";
+}
+
+.h2-8::before{
+    content: "🪛";
+}
+
+.h2-9::before{
+    content: "📞";
+}
+
+.h2-10::before{
+    content: "💻";
+}
+
+
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-width: 780px){
+    header{
+        height: 50px;
+    }
+    h1{
+        font-size: 18px;
+        margin: 20px;
+    }
+    nav li a{
+        font-size:12px;
+        padding: 10px;
+    }
+    
+    nav li:hover a{
+        padding: 5px 10px 10px 10px;
+    }
+
+    .sec {
+        display: block;
+        text-align: center;
+    }
+
+    .gauche, .droite {
+        float: none;
+        width: 100%;
+
+    }
+
+    .mon-image {
+        max-width: 80%;
+        margin-top: 0%;
+        margin-left: 5px;
+    }
+
+    .iframe{
+        max-width: 100%;
+    }
+
+    table{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .vid{
+        width: 350px;
+        
+    } 
+    
+
+
+   
+    
+}
